@@ -11,8 +11,8 @@ st.title("⚖️ 多支股票投資對比 (含 MDD 發生區間)")
 # 2. 側邊欄設定
 with st.sidebar:
     st.header("1. 設定投資參數")
-    start_date = st.date_input("理想開始日期", value=datetime(2009, 12, 31), min_value=datetime(1900, 1, 1), max_value=datetime.today())
-    end_date = st.date_input("理想結束日期", value=datetime.today(), min_value=datetime(1900, 1, 1), max_value=datetime.today())
+    start_date = st.date_input("開始日期", value=datetime(2009, 12, 31), min_value=datetime(1900, 1, 1), max_value=datetime.today())
+    end_date = st.date_input("結束日期", value=datetime.today(), min_value=datetime(1900, 1, 1), max_value=datetime.today())
     initial_capital = 10000 
 
     st.divider()
